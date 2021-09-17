@@ -51,7 +51,7 @@ generatePalette.addEventListener('click', () => {
     
             scaleCards.appendChild(newCard);
         }
-    }else{
-        let messageError = document.querySelector('.messageError').style.display='block'
+    } else {
+        messageError = document.querySelector('.messageError').style.display='block'
     }
 })
