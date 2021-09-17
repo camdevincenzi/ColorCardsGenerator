@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="node_modules/chroma-js/chroma.js"></script>
+    <script src="https://kit.fontawesome.com/4b06c2084e.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Color Scale Generator</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <nav>
+            <div class="shade">
+                <input type="text" name="input-color" id="input-color" placeholder="color, ex: teal or #008080">
+                <div>
+                    <label for="white">White</label>
+                    <input type="radio" id="white" name="shade" value="white">
+
+                    <label for="black">Black</label>
+                    <input type="radio" id="black" name="shade" value="black">
+                </div>
+            </div>
+            <input type="number" name="input-number" max="250" id="input-number" placeholder="number of cards, ex: 12">
+            <button type="submit" id="submit-button">Submit</button>
+        </nav>
+
+        <h3>🌈 Pick a color 🌈</h3>
+        <h4>and click it to get its hex code </h4>
+        
+        <ol id="scale-cards" class="cards">
+
+        </ol>
+
+        <p class="messageError">We've run out of paint, try creating a maximum of 36 cards ❌</p>
+
+    </div>
+
+    
+    <script src="node_modules/clipboard/dist/clipboard.min.js"></script>
+    <script src="/node_modules/chroma-js/src/colors/w3cx11.js"></script>
+    <script src="app.js"></script>
+
+</body>
+</html>
